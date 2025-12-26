@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', function() {
 
     const header = document.getElementById('header');
@@ -102,21 +100,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const testimonials = [
         {
-            text: '"Невероятный сервис и потрясающий результат! Мастера действительно знают свое дело. Теперь это мой любимый салон красоты. Рекомендую всем!"',
-            name: 'Алия Нурмухамедова',
-            role: 'Постоянный клиент',
+            text: '"Incredible service and amazing results! The specialists really know their craft. This is now my favorite beauty salon. Highly recommend!"',
+            name: 'Aliya Johnson',
+            role: 'Regular Client',
             img: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face'
         },
         {
-            text: '"Прекрасная атмосфера и профессиональный подход. Мария сделала мне потрясающий маникюр, который продержался 3 недели! Обязательно вернусь снова."',
-            name: 'Диана Касымова',
-            role: 'Клиент VIP-пакета',
+            text: '"Wonderful atmosphere and professional approach. Maria did an amazing manicure that lasted 3 weeks! I will definitely come back again."',
+            name: 'Diana Smith',
+            role: 'VIP Package Client',
             img: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face'
         },
         {
-            text: '"Записалась на свадебный образ и осталась в полном восторге! Прическа и макияж были идеальными весь день. Спасибо команде Bella Rose!"',
-            name: 'Камила Ахметова',
-            role: 'Невеста',
+            text: '"Booked a bridal look and was absolutely delighted! The hairstyle and makeup were perfect all day. Thank you to the Bella Rose team!"',
+            name: 'Camila Brown',
+            role: 'Bride',
             img: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=face'
         }
     ];
@@ -178,7 +176,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const formData = new FormData(contactForm);
             const data = Object.fromEntries(formData);
             
-            showNotification('Спасибо! Мы свяжемся с вами в ближайшее время.', 'success');
+            showNotification('Thank you! We will contact you shortly.', 'success');
             
        
             contactForm.reset();
@@ -268,20 +266,20 @@ document.addEventListener('DOMContentLoaded', function() {
             summaryServices.innerHTML = selectedServices.map(s => 
                 `<div class="summary-item">
                     <span>${s.name}</span>
-                    <span>${s.price.toLocaleString()} ₸</span>
+                    <span>$${s.price}</span>
                 </div>`
             ).join('');
             summaryTotal.style.display = 'flex';
-            summaryTotalValue.textContent = totalPrice.toLocaleString() + ' ₸';
+            summaryTotalValue.textContent = '$' + totalPrice;
         } else {
-            summaryServices.innerHTML = '<p style="color: var(--brown); opacity: 0.7; font-style: italic;">Выберите услуги слева</p>';
+            summaryServices.innerHTML = '<p style="color: var(--brown); opacity: 0.7; font-style: italic;">Select services on the left</p>';
             summaryTotal.style.display = 'none';
         }
         
         if (dateInput && dateInput.value) {
             const date = new Date(dateInput.value);
             const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-            summaryDateValue.textContent = date.toLocaleDateString('ru-RU', options);
+            summaryDateValue.textContent = date.toLocaleDateString('en-US', options);
             summaryDate.style.display = 'flex';
         }
         
@@ -294,15 +292,15 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (masterSelect && masterSelect.value) {
             const masterNames = {
-                'anna': 'Анна Ким',
-                'maria': 'Мария Иванова',
-                'elena': 'Елена Петрова',
-                'sofia': 'София Ли'
+                'anna': 'Anna Kim',
+                'maria': 'Maria Ivanova',
+                'elena': 'Elena Petrova',
+                'sofia': 'Sofia Lee'
             };
-            summaryMasterValue.textContent = masterNames[masterSelect.value] || 'Любой мастер';
+            summaryMasterValue.textContent = masterNames[masterSelect.value] || 'Any Specialist';
             summaryMaster.style.display = 'flex';
         } else {
-            summaryMasterValue.textContent = 'Любой мастер';
+            summaryMasterValue.textContent = 'Any Specialist';
             summaryMaster.style.display = 'flex';
         }
     }
@@ -312,12 +310,12 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             
             if (selectedServices.length === 0) {
-                showNotification('Пожалуйста, выберите хотя бы одну услугу', 'error');
+                showNotification('Please select at least one service', 'error');
                 return;
             }
             
             if (!selectedTime) {
-                showNotification('Пожалуйста, выберите время', 'error');
+                showNotification('Please select a time', 'error');
                 return;
             }
             
@@ -325,11 +323,11 @@ document.addEventListener('DOMContentLoaded', function() {
             const clientPhone = document.getElementById('clientPhone').value;
             
             if (!clientName || !clientPhone) {
-                showNotification('Пожалуйста, заполните имя и телефон', 'error');
+                showNotification('Please fill in your name and phone number', 'error');
                 return;
             }
             
-            showNotification('Отлично! Ваша запись подтверждена. Мы отправим SMS с деталями.', 'success');
+            showNotification('Great! Your booking is confirmed. We will send you an SMS with details.', 'success');
             
             bookingForm.reset();
             serviceOptions.forEach(o => o.classList.remove('selected'));

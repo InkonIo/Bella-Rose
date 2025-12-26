@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Запись на прием в салон красоты Bella Rose. Выберите услугу, дату и время.">
-    <title>Запись на прием | Bella Rose</title>
+    <meta name="description" content="Book an appointment at Bella Rose beauty salon. Choose your service, date and time.">
+    <title>Book Appointment | Bella Rose</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
 </head>
@@ -18,14 +18,14 @@
                 </a>
                 
                 <ul class="nav-menu" id="navMenu">
-                    <li><a href="index.html" class="nav-link">Главная</a></li>
-                    <li><a href="index.html#services" class="nav-link">Услуги</a></li>
-                    <li><a href="index.html#about" class="nav-link">О нас</a></li>
-                    <li><a href="index.html#gallery" class="nav-link">Галерея</a></li>
-                    <li><a href="index.html#team" class="nav-link">Мастера</a></li>
-                    <li><a href="index.html#contact" class="nav-link">Контакты</a></li>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="index.html#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="index.html#team" class="nav-link">Team</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
                     <li class="nav-cta">
-                        <a href="booking.html" class="btn btn-primary">Записаться</a>
+                        <a href="booking.html" class="btn btn-primary">Book Now</a>
                     </li>
                 </ul>
                 
@@ -40,12 +40,12 @@
 
     <section class="page-hero">
         <div class="container">
-            <h1>Запись на прием</h1>
-            <p>Выберите услугу, удобную дату и время</p>
+            <h1>Book Appointment</h1>
+            <p>Choose your service, preferred date and time</p>
             <div class="breadcrumb">
-                <a href="index.html">Главная</a>
+                <a href="index.html">Home</a>
                 <span>/</span>
-                <span>Запись</span>
+                <span>Booking</span>
             </div>
         </div>
     </section>
@@ -55,91 +55,91 @@
         <div class="container">
             <div class="booking-grid">
                 <div class="booking-form-container glass-card">
-                    <h3>Заполните форму записи</h3>
+                    <h3>Fill Out the Booking Form</h3>
                     
                     <form id="bookingForm">
                         <!-- Services Selection -->
                         <div class="form-group">
-                            <label>Выберите услуги</label>
+                            <label>Select Services</label>
                             <div class="services-selection">
-                                <label class="service-option" data-price="2500" data-name="Маникюр классический">
+                                <label class="service-option" data-price="25" data-name="Classic Manicure">
                                     <input type="checkbox" name="services" value="manicure-classic">
                                     <div class="service-option-check">✓</div>
                                     <div class="service-option-info">
-                                        <div class="service-option-name">Маникюр классический</div>
-                                        <div class="service-option-duration">60 мин</div>
+                                        <div class="service-option-name">Classic Manicure</div>
+                                        <div class="service-option-duration">60 min</div>
                                     </div>
-                                    <div class="service-option-price">2 500 ₸</div>
+                                    <div class="service-option-price">$25</div>
                                 </label>
                                 
-                                <label class="service-option" data-price="4000" data-name="Маникюр + гель-лак">
+                                <label class="service-option" data-price="40" data-name="Manicure + Gel Polish">
                                     <input type="checkbox" name="services" value="manicure-gel">
                                     <div class="service-option-check">✓</div>
                                     <div class="service-option-info">
-                                        <div class="service-option-name">Маникюр + гель-лак</div>
-                                        <div class="service-option-duration">90 мин</div>
+                                        <div class="service-option-name">Manicure + Gel Polish</div>
+                                        <div class="service-option-duration">90 min</div>
                                     </div>
-                                    <div class="service-option-price">4 000 ₸</div>
+                                    <div class="service-option-price">$40</div>
                                 </label>
                                 
-                                <label class="service-option" data-price="3500" data-name="Педикюр классический">
+                                <label class="service-option" data-price="35" data-name="Classic Pedicure">
                                     <input type="checkbox" name="services" value="pedicure-classic">
                                     <div class="service-option-check">✓</div>
                                     <div class="service-option-info">
-                                        <div class="service-option-name">Педикюр классический</div>
-                                        <div class="service-option-duration">75 мин</div>
+                                        <div class="service-option-name">Classic Pedicure</div>
+                                        <div class="service-option-duration">75 min</div>
                                     </div>
-                                    <div class="service-option-price">3 500 ₸</div>
+                                    <div class="service-option-price">$35</div>
                                 </label>
                                 
-                                <label class="service-option" data-price="5500" data-name="Педикюр + гель-лак">
+                                <label class="service-option" data-price="55" data-name="Pedicure + Gel Polish">
                                     <input type="checkbox" name="services" value="pedicure-gel">
                                     <div class="service-option-check">✓</div>
                                     <div class="service-option-info">
-                                        <div class="service-option-name">Педикюр + гель-лак</div>
-                                        <div class="service-option-duration">100 мин</div>
+                                        <div class="service-option-name">Pedicure + Gel Polish</div>
+                                        <div class="service-option-duration">100 min</div>
                                     </div>
-                                    <div class="service-option-price">5 500 ₸</div>
+                                    <div class="service-option-price">$55</div>
                                 </label>
                                 
-                                <label class="service-option" data-price="4000" data-name="Стрижка женская">
+                                <label class="service-option" data-price="40" data-name="Women's Haircut">
                                     <input type="checkbox" name="services" value="haircut">
                                     <div class="service-option-check">✓</div>
                                     <div class="service-option-info">
-                                        <div class="service-option-name">Стрижка женская</div>
-                                        <div class="service-option-duration">45 мин</div>
+                                        <div class="service-option-name">Women's Haircut</div>
+                                        <div class="service-option-duration">45 min</div>
                                     </div>
-                                    <div class="service-option-price">4 000 ₸</div>
+                                    <div class="service-option-price">$40</div>
                                 </label>
                                 
-                                <label class="service-option" data-price="6000" data-name="Укладка праздничная">
+                                <label class="service-option" data-price="60" data-name="Occasion Styling">
                                     <input type="checkbox" name="services" value="styling">
                                     <div class="service-option-check">✓</div>
                                     <div class="service-option-info">
-                                        <div class="service-option-name">Укладка праздничная</div>
-                                        <div class="service-option-duration">60 мин</div>
+                                        <div class="service-option-name">Occasion Styling</div>
+                                        <div class="service-option-duration">60 min</div>
                                     </div>
-                                    <div class="service-option-price">6 000 ₸</div>
+                                    <div class="service-option-price">$60</div>
                                 </label>
                                 
-                                <label class="service-option" data-price="8000" data-name="Макияж вечерний">
+                                <label class="service-option" data-price="80" data-name="Evening Makeup">
                                     <input type="checkbox" name="services" value="makeup">
                                     <div class="service-option-check">✓</div>
                                     <div class="service-option-info">
-                                        <div class="service-option-name">Макияж вечерний</div>
-                                        <div class="service-option-duration">60 мин</div>
+                                        <div class="service-option-name">Evening Makeup</div>
+                                        <div class="service-option-duration">60 min</div>
                                     </div>
-                                    <div class="service-option-price">8 000 ₸</div>
+                                    <div class="service-option-price">$80</div>
                                 </label>
                                 
-                                <label class="service-option" data-price="10000" data-name="СПА для лица">
+                                <label class="service-option" data-price="100" data-name="Facial SPA">
                                     <input type="checkbox" name="services" value="spa-face">
                                     <div class="service-option-check">✓</div>
                                     <div class="service-option-info">
-                                        <div class="service-option-name">СПА для лица</div>
-                                        <div class="service-option-duration">90 мин</div>
+                                        <div class="service-option-name">Facial SPA</div>
+                                        <div class="service-option-duration">90 min</div>
                                     </div>
-                                    <div class="service-option-price">10 000 ₸</div>
+                                    <div class="service-option-price">$100</div>
                                 </label>
                             </div>
                         </div>
@@ -147,24 +147,24 @@
                         <!-- Date & Time -->
                         <div class="datetime-grid">
                             <div class="form-group">
-                                <label for="date">Выберите дату</label>
+                                <label for="date">Select Date</label>
                                 <input type="date" id="date" name="date" required>
                             </div>
                             
                             <div class="form-group">
-                                <label for="master">Выберите мастера</label>
+                                <label for="master">Select Specialist</label>
                                 <select id="master" name="master">
-                                    <option value="">Любой мастер</option>
-                                    <option value="anna">Анна Ким</option>
-                                    <option value="maria">Мария Иванова</option>
-                                    <option value="elena">Елена Петрова</option>
-                                    <option value="sofia">София Ли</option>
+                                    <option value="">Any Specialist</option>
+                                    <option value="anna">Anna Kim</option>
+                                    <option value="maria">Maria Ivanova</option>
+                                    <option value="elena">Elena Petrova</option>
+                                    <option value="sofia">Sofia Lee</option>
                                 </select>
                             </div>
                         </div>
                         
                         <div class="form-group">
-                            <label>Выберите время</label>
+                            <label>Select Time</label>
                             <div class="time-slots" id="timeSlots">
                                 <div class="time-slot" data-time="09:00">09:00</div>
                                 <div class="time-slot" data-time="10:00">10:00</div>
@@ -184,74 +184,74 @@
                         <!-- Personal Info -->
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="clientName">Ваше имя</label>
-                                <input type="text" id="clientName" name="clientName" placeholder="Введите имя" required>
+                                <label for="clientName">Your Name</label>
+                                <input type="text" id="clientName" name="clientName" placeholder="Enter your name" required>
                             </div>
                             <div class="form-group">
-                                <label for="clientPhone">Телефон</label>
+                                <label for="clientPhone">Phone</label>
                                 <input type="tel" id="clientPhone" name="clientPhone" placeholder="+7 (___) ___-__-__" required>
                             </div>
                         </div>
                         
                         <div class="form-group">
-                            <label for="clientEmail">Email (необязательно)</label>
+                            <label for="clientEmail">Email (optional)</label>
                             <input type="email" id="clientEmail" name="clientEmail" placeholder="your@email.com">
                         </div>
                         
                         <div class="form-group">
-                            <label for="clientComment">Комментарий</label>
-                            <textarea id="clientComment" name="clientComment" placeholder="Особые пожелания..."></textarea>
+                            <label for="clientComment">Comments</label>
+                            <textarea id="clientComment" name="clientComment" placeholder="Special requests..."></textarea>
                         </div>
                         
                         <button type="submit" class="btn btn-primary form-submit">
-                            Подтвердить запись
+                            Confirm Booking
                         </button>
                     </form>
                 </div>
                 
                 <div class="booking-summary glass-card">
-                    <h4>Ваша запись</h4>
+                    <h4>Your Booking</h4>
                     
                     <div id="summaryServices">
                         <p style="color: var(--brown); opacity: 0.7; font-style: italic;">
-                            Выберите услуги слева
+                            Select services on the left
                         </p>
                     </div>
                     
                     <div class="summary-item" id="summaryDate" style="display: none;">
-                        <span>Дата:</span>
+                        <span>Date:</span>
                         <span id="summaryDateValue">-</span>
                     </div>
                     
                     <div class="summary-item" id="summaryTime" style="display: none;">
-                        <span>Время:</span>
+                        <span>Time:</span>
                         <span id="summaryTimeValue">-</span>
                     </div>
                     
                     <div class="summary-item" id="summaryMaster" style="display: none;">
-                        <span>Мастер:</span>
+                        <span>Specialist:</span>
                         <span id="summaryMasterValue">-</span>
                     </div>
                     
                     <div class="summary-total" id="summaryTotal" style="display: none;">
-                        <span>Итого:</span>
-                        <span id="summaryTotalValue">0 ₸</span>
+                        <span>Total:</span>
+                        <span id="summaryTotalValue">$0</span>
                     </div>
                     
                     <div style="margin-top: 30px; padding: 20px; background: var(--blush-light); border-radius: 15px;">
                         <h5 style="font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 10px; color: var(--brown-dark);">
-                            💡 Важно знать
+                            💡 Good to Know
                         </h5>
                         <ul style="font-size: 0.85rem; color: var(--brown); line-height: 1.8;">
-                            <li>• Бесплатная отмена за 24 часа</li>
-                            <li>• При опоздании более 15 мин — запись переносится</li>
-                            <li>• Оплата наличными или картой</li>
+                            <li>• Free cancellation 24 hours in advance</li>
+                            <li>• If you're more than 15 min late — booking will be rescheduled</li>
+                            <li>• Payment by cash or card</li>
                         </ul>
                     </div>
                     
                     <div style="margin-top: 20px; text-align: center;">
                         <p style="font-size: 0.9rem; color: var(--brown);">
-                            Есть вопросы? Звоните:
+                            Have questions? Call us:
                         </p>
                         <a href="tel:+77271234567" style="font-family: var(--font-display); font-size: 1.3rem; font-weight: 600; color: var(--rose-dark);">
                             +7 (727) 123-45-67
@@ -272,48 +272,48 @@
                         <div class="logo-text">Bella <span>Rose</span></div>
                     </a>
                     <p>
-                        Премиум салон красоты в сердце Алматы. 
-                        Создаем красоту с любовью уже более 12 лет.
+                        Premium beauty salon in the heart of Almaty. 
+                        Creating beauty with love for over 12 years.
                     </p>
                 </div>
                 
                 <div class="footer-links-col">
-                    <h4 class="footer-title">Навигация</h4>
+                    <h4 class="footer-title">Navigation</h4>
                     <ul class="footer-links">
-                        <li><a href="index.html">Главная</a></li>
-                        <li><a href="index.html#services">Услуги</a></li>
-                        <li><a href="index.html#about">О нас</a></li>
-                        <li><a href="index.html#gallery">Галерея</a></li>
-                        <li><a href="index.html#contact">Контакты</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#gallery">Gallery</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-links-col">
-                    <h4 class="footer-title">Услуги</h4>
+                    <h4 class="footer-title">Services</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Маникюр</a></li>
-                        <li><a href="#">Педикюр</a></li>
-                        <li><a href="#">Парикмахерская</a></li>
-                        <li><a href="#">Макияж</a></li>
-                        <li><a href="#">СПА</a></li>
+                        <li><a href="#">Manicure</a></li>
+                        <li><a href="#">Pedicure</a></li>
+                        <li><a href="#">Hair Salon</a></li>
+                        <li><a href="#">Makeup</a></li>
+                        <li><a href="#">SPA</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-hours-col">
-                    <h4 class="footer-title">Часы работы</h4>
+                    <h4 class="footer-title">Working Hours</h4>
                     <ul class="footer-hours">
-                        <li><span>Пн-Пт</span><span>09:00 - 21:00</span></li>
-                        <li><span>Суббота</span><span>10:00 - 20:00</span></li>
-                        <li><span>Воскресенье</span><span>10:00 - 18:00</span></li>
+                        <li><span>Mon-Fri</span><span>09:00 - 21:00</span></li>
+                        <li><span>Saturday</span><span>10:00 - 20:00</span></li>
+                        <li><span>Sunday</span><span>10:00 - 18:00</span></li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 Bella Rose. Все права защищены.</p>
+                <p>&copy; 2025 Bella Rose. All rights reserved.</p>
                 <div class="footer-bottom-links">
-                    <a href="#">Политика конфиденциальности</a>
-                    <a href="#">Условия использования</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
                 </div>
             </div>
         </div>
